@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Selection Styling */
+::selection {
+    background-color: #0052cc;
+    color: #ffffff;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to bottom, #0a1e45, #1d2b62);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+/* Header Section Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 2px solid #00aaff;
+}
+
+.header img,
+.header .img2 {
+    height: 190px;
+    transition: transform 0.3s ease;
+}
+
+.college-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0px 3px 6px #000;
+    color: #00aaff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.college-info {
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 1.5;
+    color: #c1c1c1;
+}
+
+.department-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #00aaff;
+    margin-top: 10px;
+}
+
+/* Event Styling */
+.event-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 70%;
+    position: relative;
+    padding: 20px;
+}
+
+.event-title {
+    font-size: 3.5rem;
+    color: #66ccff;
+    font-family: 'Impact', sans-serif;
+    text-shadow: 0px 5px 15px #66ccff;
+    text-align: center;
+}
+
+.events-separator {
+    width: 2px;
+    background-color: #00aaff;
+    margin: 0 20px;
+}
+
+/* Cash Prize Styling */
+.cash-prize {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffdd57;
+}
+
+.cash-prize img {
+    height: 100px;
+    margin-bottom: 8px;
+}
+
+.cash-prize div {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffdd57;
+    text-shadow: 0px 3px 10px #000;
+}
+
+/* QR Code Styling */
+.qr-section {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.qr-section img {
+    width: 140px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.qr-section div {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.qr-section .hyperlink {
+    color: #ffffff;
+}
+
+/* Date Time Styling */
+.date-time {
+    font-size: 1.4rem;
+    margin: 30px 0;
+    background: #1d2b62;
+    display: inline-block;
+    padding: 15px 25px;
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+    font-weight: bold;
+    text-shadow: 0px 2px 4px #000;
+}
+
+/* Event Styling */
+.events-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.event-column {
+    width: 45%;
+}
+
+.event-title-section {
+    font-size: 1.9rem;
+    text-decoration: underline;
+    color: #ffcc66;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+.event-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.event-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    color: #fff;
+    padding: 15px;
+    border: 2px solid #00aaff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.event-box img {
+    height: 60px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.event-box:hover {
+    transform: scale(1.05);
+    background-color: #00aaff;
+    color: #0a1e45;
+}
+
+.event-box img:hover {
+    transform: scale(1.1);
+}
+
+.event-box div {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Contact Button Styling */
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-button button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 150px;
+    height: auto;
+    padding: 7px;
+    text-decoration: none;
+    user-select: none;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-button:active,
+.contact-button:hover {
+    outline: 0;
+}
+
+.contact-button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.contact-button:hover span {
+    background: none;
+}
+
+.contact-button:active {
+    transform: scale(0.9);
+}
+
+/* Modal Styling */
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000; 
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto; 
+    padding: 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.modal-content ul {
+    text-align: left;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.event-box {
+    cursor: pointer;
+}
+
+/* Footer Styling */
+.footer {
+    font-size: 1.1rem;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    color: #c1c1c1;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header .img2 {
+        display: none;
+    }
+
+    .header img {
+        height: 160px;
+    }
+
+    .event-wrapper {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .event-title {
+        font-size: 2.5rem;
+    }
+
+    .cash-prize,
+    .qr-section {
+        position: static;
+        transform: none;
+        margin: 20px 0;
+    }
+
+    .qr-section img {
+        width: 140px;
+        height: auto;
+    }
+
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .event-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .event-box {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .img2 {
+        display: none;
+    }
+
+    .header img {
+        height: 130px;
+    }
+
+    .college-title {
+        font-size: 2rem;
+    }
+
+    .event-title {
+        font-size: 2rem;
+    }
+
+    .cash-prize img {
+        width: 140px;
+    }
+
+    .qr-section img {
+        height: auto;
+    }
+
+    .date-time {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .event-box {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .img2 {
+        display: none;
+    }
+
+    .header img {
+        height: 100px;
+    }
+
+    .college-title {
+        font-size: 1.5rem;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+    }
+
+    .cash-prize img,
+    .qr-section img {
+        width: 70px;
+        height: auto;
+    }
+
+    .date-time {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .event-box {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
