@@ -327,6 +327,11 @@ body {
     color: #444;
 }
 
+.modal-content a{
+    color: #000;
+    text-decoration: none;
+}
+
 .close-btn {
     position: absolute;
     top: 15px;
